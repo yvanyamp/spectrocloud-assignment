@@ -27,7 +27,7 @@ Address the user when creating text content. Use the noun, you. Use, we, when pr
 
 | Good  ✅                                                              | Bad ❌                                                             |
 |-------------------------------------------------------------------|-----------------------------------------------------------------|
-| Use the kubectl cli to create a namespace titled “mgmt”.                                | The Kubectl CLI can be used to create namespaces titled “mgmt”                         |
+| Use the kubectl CLI to create a namespace titled “mgmt”.                                | The kubectl CLI can be used to create namespaces titled “mgmt”                         |
 | Prior to upgrading, ensure you have carefully reviewed the release notes for deprecation notices.                          | Release notes should be carefully verified for deprecation notices prior to an upgrade.                                         |
 |We recommended deploying Palette Enterprise in a highly-available configuration of at least three nodes.                           | It is recommended to deploy Palette Enterprise in a highly-available configuration of at least three nodes.                          ||
 
@@ -63,13 +63,13 @@ Use gender-neutral pronouns. Avoid the following nouns he, him, his, she, or her
 
 ### Headline Style
 
-Use title case for headings.  If the heading is conceptual or non-task based, then start with a noun. Avoid using a noun that starts with an -ing.
+Use title case for headings. If the heading is conceptual or non-task based, then start with a noun. Avoid using a noun that starts with an -ing. The same applies to gerunds.
 
 | Good  ✅                                                              | Bad ❌                                                             |
 |-------------------------------------------------------------------|-----------------------------------------------------------------|
-| Deploy a Pack Registry Server.                                 | Deploying A Pack Registry Server.                           |
-| Access Audit Logs.                             | Accessing audit logs                                           |
-| Quick Start with Palette App Mode.                              | Quick start with Palette app mode                               |
+| Deploy a Pack Registry Server                                 | Deploying A Pack Registry Server                           |
+| Access Audit Logs                             | Accessing audit logs                                           |
+| Quick Start with Palette App Mode                              | Quick start with Palette app mode                               |
 
 
 
