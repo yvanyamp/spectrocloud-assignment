@@ -23,7 +23,7 @@ Create a pull request (PR) in your repository when you have completed all the ch
 - You can use Gitlab, GitHub, Bitbucket, or any other versioning control system to host your deliverable.
 - Assume the content would reside in a formal documentation site.
 - Users of all skill level will read the content.
-- This is not a [tutorial](https://docs.spectrocloud.com/clusters/public-cloud/deploy-k8s-cluster), nor a [procedural document](https://docs.spectrocloud.com/clusters/cluster-management/remove-clusters) (Step 1 ... Step N). The content is intended to be a reference page (also known as a concept page) that both beginners and experts can use to find information about a topic. The content should provide enough information to help the reader understand the concept and how to use the various commands.
+- This is not a [tutorial](https://docs.spectrocloud.com/clusters/public-cloud/deploy-k8s-cluster), nor a [procedural document](https://docs.spectrocloud.com/clusters/cluster-management/remove-clusters) (Step 1 ... Step N). The content is intended to be a reference page for beginners and experts to find information about a topic. The content should provide enough information to help the reader understand the concept and how to use the various commands.
 
 ## Tips
 
