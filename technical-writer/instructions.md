@@ -2,7 +2,7 @@
 
 This assignment will test your writing abilities. The hiring manager will review the deliverable before the technical interview. During the technical interview, you will have the opportunity to discuss your changes.
 
-We ask that you DO NOT spend more than three hours on this assignment. The assignment is not passed or failed but instead used as an indicator to help us understand your capabilities. 
+The assignment is not passed or failed but instead used as an indicator to help us understand your capabilities. 
 
 Please submit the assignment no later than 24 hours before the technical interview.
 
@@ -23,6 +23,7 @@ Create a pull request (PR) in your repository when you have completed all the ch
 - You can use Gitlab, GitHub, Bitbucket, or any other versioning control system to host your deliverable.
 - Assume the content would reside in a formal documentation site.
 - Users of all skill level will read the content.
+- This is not a [tutorial](https://docs.spectrocloud.com/clusters/public-cloud/deploy-k8s-cluster), nor a [procedural document](https://docs.spectrocloud.com/clusters/cluster-management/remove-clusters) (Step 1 ... Step N). The content is intended to be a reference page (also known as a concept page) that both beginners and experts can use to find information about a topic. The content should provide enough information to help the reader understand the concept and how to use the various commands.
 
 ## Tips
 
@@ -31,6 +32,10 @@ Create a pull request (PR) in your repository when you have completed all the ch
 - Carefully review the [style guide](../style_guide.md).
 
 - Use [markdown](https://www.markdownguide.org/) and its features.
+
+- Research the topic if you have no prior experience with Kubernetes. Ask yourself how you could present the information that would benefit both a beginner and an expert.
+
+- Ask yourself how the reference page you are editing can provide value in addition to the resource links provided in the text. *Hint* - replicating the offical Kubernetes documentation is not the answer.
 
 - Review grammar and language. Writing content littered with typos and awkward language results in a poor reader experience.
 
