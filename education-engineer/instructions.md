@@ -2,7 +2,7 @@
 
 This assignment will test your writing and teaching abilities. The hiring manager will review the deliverable before the technical interview. During the technical interview, you will have the opportunity the discuss your changes.
 
-We ask that you DO NOT spend more than three hours on this assignment.  The assignment is not passed or failed but instead used as an indicator to help us understand your capabilities. 
+The assignment is not passed or failed but instead used as an indicator to help us understand your capabilities. 
 
 Please submit the assignment no later than 24 hrs before the technical interview.
 
@@ -25,6 +25,8 @@ Create a PR in your repository when you have completed all the changes and are s
 ## Tips
 
 - Carefully review the [style guide](../style_guide.md) and [layout guide](./layout.md).
+
+- Focus on the learning experience. What are some concepts that a begginer may struggle with? How can you help them understand the concept?
 
 - Review grammar and language.
 
