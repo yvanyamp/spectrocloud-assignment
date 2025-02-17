@@ -26,7 +26,7 @@ Create a PR in your repository when you have completed all the changes and are s
 
 - Carefully review the [style guide](../style_guide.md) and [layout guide](./layout.md).
 
-- Focus on the learning experience. What are some concepts that a begginer may struggle with? How can you help them understand the concept?
+- Focus on the learning experience. What are some concepts that a beginner may struggle with? How can you help them understand the concept?
 
 - Review grammar and language.
 
