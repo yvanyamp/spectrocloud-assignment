@@ -1,11 +1,15 @@
 # Deploy Applications with Kind
 
-Kubernetes is a popular orchestration platform that is used by many organizations to deploy applications. We can use [kind](https://kind.sigs.k8s.io/) to gain practice with kubernetes. Let's deploy an application with kind to see how it works. Start by installing kind from https://kind.sigs.k8s.io/. Be aware that you will need to have Docker installed locally.
+Kubernetes is a popular orchestration platform that is used by many organizations to deploy applications. We can use [kind](https://kind.sigs.k8s.io/) to gain practice with Kubernetes. Let's deploy an application with kind to explore how it works. 
 
-Start kind with the command `kind create cluster` and wait for the setup to complete.
+Start by installing kind from https://kind.sigs.k8s.io/. Be aware that you will need to have [Docker] (https://docs.docker.com/get-started/get-docker/) installed locally. Issue the command `kind create cluster` and wait for the setup to complete.
+
+```shell
+kind create cluster
+```
+
 
 ```
-$ kind create cluster
 Creating cluster "kind" ...
  ✓ Ensuring node image (kindest/node:v1.25.3) 🖼
  ✓ Preparing nodes 📦
@@ -18,22 +22,28 @@ You can now use your cluster with:
 
 kubectl cluster-info --context kind-kind
 
-Have a nice day! 👋
+Thanks for using kind! 😊
 ```
 
-You should check for connectivity with the Kubernete cluster and the Kubernetes API. A good way to test for connectivity to the cluster and the Kubernetes API is by using the CLI.
+You should check for connectivity with the Kubernete cluster and the Kubernetes API. A good way to test for connectivity to the cluster and the Kubernetes API is by using the Command Line Interface(CLI).
+
+```shell
+kubectl cluster-info --context kind-kind
+```
+
+The output contains the control plane IP address and more. 
 
 ```
-$ kubectl cluster-info --context kind-kind
+Kubernetes control plane is running at https://*yourIP*
+CoreDNS is running at https://*yourIP*/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
 ```
 
-You should see output that contains the control plane IP address and more. 
-
-## Deploy Application
+# Deploy Application
 
 Create a file named **app.yaml** and insert the following configuration. 
 
 ```yml
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -83,7 +93,13 @@ The configuration file contains a *deployment* configuration and a *service*. We
 Next, deploy the application.
 
 ```shell
-$ kubectl apply -f app.yaml
+kubectl apply -f app.yaml
+```
+
+
+```
+deployment.apps/web configured
+service/web created
 ```
 
 Now that the application, web, is deployed we can access the application by exposing the nodePort through port forwarding. However, to port forward the container port the container name is required.
@@ -91,20 +107,38 @@ Now that the application, web, is deployed we can access the application by expo
 To get the container name, issue the following command:
 
 ```shell
-$ PODNAME=$(kubectl get pods --template '{{range .items}}{{.metadata.name}}{{end}}' --selector=app=web)
+PODNAME=$(kubectl get pods --template '{{range .items}}{{.metadata.name}}{{end}}' --selector=app=web)
 ```
 
 Now that you have the container name, start the port forwarding with the container to expose the port to the local network.
+```shell
+kubectl port-forward $PODNAME 8080:8080
 ```
-$ kubectl port-forward $PODNAME 8080:8080
+
+
+```
 Forwarding from 127.0.0.1:8080 -> 8080
 Forwarding from [::1]:8080 -> 8080
 ```
 
-If you visit localhost:8080 you will see the Hello World welcome page.
+Open localhost:8080 at your browser to view the Hello World welcome page.
 
+# Cleanup
+Use the following steps to remove all the resources you created for the tutorial. 
+Issue the following commands:
+
+```shell
+kubectl delete -f app.yaml
+```
+
+
+```shell
+kind delete cluster
+```
 # Next Steps
 
-As mentioned before Kubernetes is an orchestration platform used to deploy containerized applications. We hope you now better understand how one can deploy applications to Kubernetes and AWS. 
-
-
+In this tutorial you deployed a simple application using kind and verified the running service.
+To explore more Kubernetes dive into these topics: 
+`Topic1`
+`Topic2`
+`Topic3`
